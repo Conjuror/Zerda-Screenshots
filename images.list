@@ -5,16 +5,16 @@
 - [x] "NEXT"
 #### 0-2. Onboarding - second
 - [x] "Browse faster than ever"
-- [x] "Our turbo mode blocks ads & trackers for you to enjoy browsing at blazing speed. If a site seems broken, you can turn it off from the menu."
+- [x] "Use turbo mode to block ads and trackers so you can browse at blazing speeds. If sites seems broken, just tap off the turbo mode switch in the menu."
 - [x] "Turbo mode"
 - [x] "NEXT"
 #### 0-3. Onboarding - third
-- [x] "Save Data = Save Money"
-- [x] "We block ads and tracker by default to save you data. You can save even more by enabling Block Image in the app menu."
+- [x] "Save data = Save money"
+- [x] "Blocking ads and online trackers not only speeds up browsing, it saves data. Save even more when you block images."
 - [x] "NEXT"
 #### 0-4. Onboarding - forth
-- [x] "Screenshot Everything"
-- [x] "You can now take screenshots of the whole web page and easily revisit the web page or view screenshots without using your data."
+- [x] "Screenshot everything"
+- [x] "Take screenshots of entire web pages. View a screenshot offline (without using data) or tap it to revisit the web page."
 - [x] "OK, GOT IT!"
 #### 1-1. Home | Long tap on top site
 - [x] "Firefox Rocket"
@@ -29,7 +29,7 @@
 - [x] "Clear cache"
 - [x] "Settings"
 #### 2-1. HOME | Menu | Downloads empty
-- [x] "No Downloads"
+- [x] "No downloads"
 #### 2-2. Home | Menu | Downloads with items
 - [ ] "failed"
 - [ ] "canceled"
@@ -69,7 +69,7 @@
 #### 4-4. Home | Menu | My shots | Screenshot item | Delete | DELETE
 - [x] "Screenshot deleted" (toast)
 #### 4-5. Home | Menu | My shots | Tap on missing screenshot
-- [ ] "Cannot display the screenshot"
+- [x] "Cannot display the screenshot"
 #### 5-1. Home | Menu | Turbo mode | -> off
 - [x] "Turbo mode" disabled (toast)
 #### 5-2. Home | Menu | Turbo mode | -> on
@@ -93,7 +93,7 @@
 #### 7-2. Home | Menu | Settings | Language
 - [x] "Language"
 - [x] "System default"
-- [x] "English (United States)"
+- [ ] "English (United States)"
 - [ ] "Indonesia"
 - [x] "CANCEL"
 #### 7-3. Home | Menu | Settings | Default search engine
@@ -148,11 +148,17 @@
 - [x] "Screenshot saved" (snack bar - action: SHARE)
 #### 8-3. Home | Menu | Capture screenshot | Failed to capture
 - [x] "Failed to capture" (toast)
+#### 8-4. Home | System screenshot
+- [ ] "Tap the %capture_icon% on the menu to capture the entire page."
+- [ ] "Use saved screenshots to go back to the page anytime."
+- [ ] "GOT IT!"
+#### 8-5. Home | Menu | Capture screenshot
+- [x] "capturing screenshot of entire page..."
 #### 9-1. Home | Error page
 - [x] "Webpage not available"
-- [x] "- Make sure you have a data connection"
-- [x] "- Check the address you entered"
-- [ ] "Reload"
+- [x] "- Make sure you are connected to the internet"
+- [x] "- Check the address"
+- [x] "TRY AGAIN"
 #### 9-2. Context menu inside Zerda
 - [x] "Share link"
 - [x] "Copy link address"
@@ -179,4 +185,3 @@
 - [ ] "SD card is almost full. File was saved to internal storage" (toast)
 #### 10-1. Context menu from outside app
 - [x] "SEARCH IN FIREFOX ROCKET"
-
