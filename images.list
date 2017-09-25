@@ -1,3 +1,6 @@
+Build: 1193
+Per the UX spec (Home: v2.1, Menu: v2.1)
+Edited: 09/25 14:57
 ## Strings
 #### 0-1. Onboarding - first
 - [x] "Thanks for choosing Firefox Rocket"
@@ -34,18 +37,18 @@
 - [x] "CANCEL"
 - [x] "downloading"
 #### 2-2-2. Home | Menu | Downloads with items
-- [ ] "failed" (can't confirm)
+- [x] "failed"
 - [ ] _"canceled"_ (P 1.5)
 - [x] "paused"
 #### 2-3. Home | Menu | Downloads with items | item_menu
 - [x] "Remove from list"
 - [x] "Delete file"
 #### 2-4. Home | Menu | Downloads with items | item_menu | Delete file
-- [ ] "file_name* was deleted" (snack bar - action: UNDO)
+- [x] "file_name* was deleted" (toast)
 #### 2-5. Home | Menu | Downloads with items | tap on a missing file
 - [x] "Cannot find the file" (toast)
 #### 2-6. Home | Menu | Downloads with items | downloading_menu | CANCEL
-- [ ] "file_name* download canceled"
+- [ ] "Download canceled" (toast)
 #### 3-1. Home | Menu | History empty
 - [x] "No browsing history"
 #### 3-2. Home | Menu | History item | item menu (with CLEAR BROWSING HISTORY)
@@ -107,7 +110,7 @@
 - [x] "Browsing history
 - [x] "Form history"
 - [x] "Cookies"
-- [ ] "Cache"
+- [x] "Cache"
 - [x] "CANCEL"
 - [x] "CLEAR DATA"
 #### 7-5. Home | Menu | Settings | Clear browsing data | CLEAR DATA
@@ -137,7 +140,7 @@
 - [ ] "Firefox Rocket is a fast and lightweight browser produced by Mozilla. Our mission is to foster a healthy, open internet."
 - [x] "Learn more"
 - [x] "Support"
-- [ ] "Your Rights"
+- [x] "Your Rights"
 - [x] "Privacy Notice"
 #### 7-11. Home | Menu | Settings | About | Your Rights
 - [x] "Firefox Rocket is free and open source software made by Mozilla and other contributors."
@@ -172,8 +175,6 @@
 - [x] "Share image"
 - [x] "Copy image address"
 - [x] "Save image"
-#### 9-4. Context menu inside Zerda | Save image | finished
-- [ ] "file_name* finished" (snack bar - action: OPEN)
 #### _9-5. Context menu inside Zerda | Download a file | Download using mobile data confirm (P 1.5)_
 - [ ] _"file_name*"_
 - [ ] _"filesize*"_
@@ -183,18 +184,18 @@
 #### 9-6. Context menu inside Zerda | Download a file | Download started
 - [x] "Downloading..." (toast)
 #### 9-7. Context menu inside Zerda | Download a file | Download finished
-- [ ] "file_name* downloaded" (snack bar - action: OPEN)
-#### 9-8. Context menu inside Zerda | Download a file | Download: No SD card detected
-- [ ] "No SD card detected. File was saved to internal storage." (toast)
-#### 9-9. Context menu inside Zerda | Download a file | Download: Saved to SD card
-- [ ] "File saved to SD card" (toast)
-#### 9-10. Context menu inside Zerda | Download a file | Download: SD card is full
-- [ ] "SD card is almost full. File was saved to internal storage." (toast)
+- [x] "file_name* downloaded" (toast)
+#### _9-8. Context menu inside Zerda | Download a file | Download: No SD card detected_
+- [ ] _"No SD card detected. File was saved to internal storage." (toast)_
+#### _9-9. Context menu inside Zerda | Download a file | Download: Saved to SD card_
+- [ ] _"File saved to SD card" (toast)_
+#### _9-10. Context menu inside Zerda | Download a file | Download: SD card is full_
+- [ ] _"SD card is almost full. File was saved to internal storage." (toast)_
 #### 9-11. Context menu inside Zerda | Download a file | Download: Storage not available
-- [ ] "Storage inaccessible. Download canceled." (toast)
+- [x] "Storage inaccessible. Download canceled." (toast)
 #### 9-12. Context menu inside Zerda | Download a file | Download: File type not supported
 - [x] “File type not supported” (toast)
 #### 9-13. Context menu inside Zerda | Download a file | Download: Protocol not supported
-- [ ] "Download protocol not supported" (toast) (can't confirm)
+- [x] "Download protocol not supported" (toast)
 #### 10-1. Context menu from outside app
 - [x] "SEARCH IN FIREFOX ROCKET"

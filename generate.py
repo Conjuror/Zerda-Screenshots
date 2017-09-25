@@ -11,7 +11,7 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="50">
+                <th colspan="54">
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
@@ -44,7 +44,7 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="50">
+                <th colspan="54">
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
