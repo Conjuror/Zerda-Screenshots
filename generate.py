@@ -11,7 +11,7 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="54">
+                <th colspan="46">
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
@@ -19,6 +19,8 @@ with open("html_sample", "w") as r:
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
             x = l[5:].split(". ")
+            if x[0].startswith("_"):
+                continue
             sample = """
 <td>            
     <a href="./en/{}.png" target="_blank" class="screenshotLink">
@@ -44,7 +46,7 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="54">
+                <th colspan="46">
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
@@ -53,6 +55,8 @@ with open("html_sample", "w") as r:
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
             x = l[5:].split(". ")
+            if x[0].startswith("_"):
+                continue
             sample = """
 <td>            
     <a href="./id/{}.png" target="_blank" class="screenshotLink">
