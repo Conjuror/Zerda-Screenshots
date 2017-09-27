@@ -1,6 +1,3 @@
-Build: 1193
-Per the UX spec (Home: v2.1, Menu: v2.1)
-Edited: 09/25 14:57
 ## Strings
 #### 0-1. Onboarding - first
 - [x] "Thanks for choosing Firefox Rocket"
@@ -48,7 +45,7 @@ Edited: 09/25 14:57
 #### 2-5. Home | Menu | Downloads with items | tap on a missing file
 - [x] "Cannot find the file" (toast)
 #### 2-6. Home | Menu | Downloads with items | downloading_menu | CANCEL
-- [ ] "Download canceled" (toast)
+- [x] "Download canceled" (toast)
 #### 3-1. Home | Menu | History empty
 - [x] "No browsing history"
 #### 3-2. Home | Menu | History item | item menu (with CLEAR BROWSING HISTORY)
