@@ -1,3 +1,6 @@
+Build: 1307
+Per the UX spec (Home: v2.1, Menu: v2.1)
+Edited: 09/27 16:56
 ## Strings
 #### 0-1. Onboarding - first
 - [x] "Thanks for choosing Firefox Rocket"
@@ -37,11 +40,14 @@
 - [x] "failed"
 - [ ] _"canceled"_ (P 1.5)
 - [x] "paused"
+#### 2-2-3. Home | Menu | Downloads with items
+- [x] "Pending"
+- [x] "Unknown"
 #### 2-3. Home | Menu | Downloads with items | item_menu
 - [x] "Remove from list"
 - [x] "Delete file"
 #### 2-4. Home | Menu | Downloads with items | item_menu | Delete file
-- [x] "file_name* was deleted" (toast)
+- [ ] "file_name* was deleted" (snack bar - action: UNDO)
 #### 2-5. Home | Menu | Downloads with items | tap on a missing file
 - [x] "Cannot find the file" (toast)
 #### 2-6. Home | Menu | Downloads with items | downloading_menu | CANCEL
@@ -134,7 +140,7 @@
 - [ ] _"Powerful screenshots"_
 - [ ] _"SHARE"_
 #### 7-10. Home | Menu | Settings | About
-- [ ] "Firefox Rocket is a fast and lightweight browser produced by Mozilla. Our mission is to foster a healthy, open internet."
+- [x] "Firefox Rocket is a fast and lightweight browser produced by Mozilla. Our mission is to foster a healthy, open internet."
 - [x] "Learn more"
 - [x] "Support"
 - [x] "Your Rights"
@@ -181,7 +187,7 @@
 #### 9-6. Context menu inside Zerda | Download a file | Download started
 - [x] "Downloading..." (toast)
 #### 9-7. Context menu inside Zerda | Download a file | Download finished
-- [x] "file_name* downloaded" (toast)
+- [x] "file_name* downloaded" (snack bar - action: OPEN)
 #### _9-8. Context menu inside Zerda | Download a file | Download: No SD card detected_
 - [ ] _"No SD card detected. File was saved to internal storage." (toast)_
 #### _9-9. Context menu inside Zerda | Download a file | Download: Saved to SD card_
