@@ -2,6 +2,7 @@
 import os
 
 counter = 1
+colspan = 47
 with open("html_sample", "w") as r:
 
     # write table format EN head
@@ -11,11 +12,11 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="47">
+                <th colspan="{}">
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
-            <tr>""")
+            <tr>""".format(colspan))
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
             x = l[5:].split(". ")
@@ -46,11 +47,11 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="47">
+                <th colspan="{}">
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
-        <tr>""")
+        <tr>""".format(colspan))
     counter = 1
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
