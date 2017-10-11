@@ -56,7 +56,7 @@ with open("index.html", "w") as r:
                 </th>
             </tr>
         <tr>""".format(maxcolspan))
-    counter = 1
+    # counter = 1
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
             x = l[5:].split(". ")
