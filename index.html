@@ -65,7 +65,7 @@
     </style>
   </head>
   <body>
-    
+
 <!-- Don't update above -->
 <!-- Replace from here -->
 
@@ -75,7 +75,7 @@
         <table>
         
             <tr>
-                <th colspan="47">
+                <th>
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
@@ -511,12 +511,22 @@
 </td>
 
 <td>            
+    <a href="./en/9-10.png" target="_blank" class="screenshotLink">
+        <img class="screenshot"
+             src="./en/9-10.png"
+           style="width: 100%;"
+             alt="en phoneScreenshots"
+    data-counter="44" />
+    </a>
+</td>
+
+<td>            
     <a href="./en/9-11.png" target="_blank" class="screenshotLink">
         <img class="screenshot"
              src="./en/9-11.png"
            style="width: 100%;"
              alt="en phoneScreenshots"
-    data-counter="44" />
+    data-counter="45" />
     </a>
 </td>
 
@@ -526,7 +536,7 @@
              src="./en/9-12.png"
            style="width: 100%;"
              alt="en phoneScreenshots"
-    data-counter="45" />
+    data-counter="46" />
     </a>
 </td>
 
@@ -536,7 +546,7 @@
              src="./en/9-13.png"
            style="width: 100%;"
              alt="en phoneScreenshots"
-    data-counter="46" />
+    data-counter="47" />
     </a>
 </td>
 
@@ -546,7 +556,7 @@
              src="./en/10-1.png"
            style="width: 100%;"
              alt="en phoneScreenshots"
-    data-counter="47" />
+    data-counter="48" />
     </a>
 </td>
 
@@ -560,7 +570,7 @@
         <table>
         
             <tr>
-                <th colspan="47">
+                <th>
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
@@ -996,12 +1006,22 @@
 </td>
 
 <td>            
+    <a href="./id/9-10.png" target="_blank" class="screenshotLink">
+        <img class="screenshot"
+             src="./id/9-10.png"
+           style="width: 100%;"
+             alt="id phoneScreenshots"
+    data-counter="44" />
+    </a>
+</td>
+
+<td>            
     <a href="./id/9-11.png" target="_blank" class="screenshotLink">
         <img class="screenshot"
              src="./id/9-11.png"
            style="width: 100%;"
              alt="id phoneScreenshots"
-    data-counter="44" />
+    data-counter="45" />
     </a>
 </td>
 
@@ -1011,7 +1031,7 @@
              src="./id/9-12.png"
            style="width: 100%;"
              alt="id phoneScreenshots"
-    data-counter="45" />
+    data-counter="46" />
     </a>
 </td>
 
@@ -1021,7 +1041,7 @@
              src="./id/9-13.png"
            style="width: 100%;"
              alt="id phoneScreenshots"
-    data-counter="46" />
+    data-counter="47" />
     </a>
 </td>
 
@@ -1031,7 +1051,7 @@
              src="./id/10-1.png"
            style="width: 100%;"
              alt="id phoneScreenshots"
-    data-counter="47" />
+    data-counter="48" />
     </a>
 </td>
 
@@ -1041,108 +1061,108 @@
 <!-- Replace end here -->
 <!-- Don't update below -->
 
-      <div id="overlay">
-        <img id="imageDisplay" src="" alt="" />
-        <div id="imageInfo"></div>
-      </div>
-      <script type="text/javascript">
-        var overlay        = document.getElementById('overlay');
-        var imageDisplay   = document.getElementById('imageDisplay');
-        var imageInfo      = document.getElementById('imageInfo');
-        var screenshotLink = document.getElementsByClassName('screenshotLink');
+<div id="overlay">
+    <img id="imageDisplay" src="" alt="" />
+    <div id="imageInfo"></div>
+  </div>
+  <script type="text/javascript">
+    var overlay        = document.getElementById('overlay');
+    var imageDisplay   = document.getElementById('imageDisplay');
+    var imageInfo      = document.getElementById('imageInfo');
+    var screenshotLink = document.getElementsByClassName('screenshotLink');
 
-        function doClick(el) {
-          if (document.createEvent) {
-            var evObj = document.createEvent('MouseEvents', true);
-            evObj.initMouseEvent("click", false, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            el.dispatchEvent(evObj);
-          } else if (document.createEventObject) { //IE
-            var evObj = document.createEventObject();
-            el.fireEvent('onclick', evObj);
-          }
-        }
+    function doClick(el) {
+      if (document.createEvent) {
+        var evObj = document.createEvent('MouseEvents', true);
+        evObj.initMouseEvent("click", false, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        el.dispatchEvent(evObj);
+      } else if (document.createEventObject) { //IE
+        var evObj = document.createEventObject();
+        el.fireEvent('onclick', evObj);
+      }
+    }
 
-        for (index = 0; index < screenshotLink.length; ++index) {
-          screenshotLink[index].addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            var img = e.target;
-            if (e.target.tagName == 'A') {
-              img = e.target.children[0];
-            }
-            
-            // beautify
-            var tmpImg = new Image();
-            tmpImg.src = img.src;
-            imageDisplay.style.height     = 'auto';
-            imageDisplay.style.width     = 'auto';
-            if (window.innerHeight < tmpImg.height) {
-              imageDisplay.style.height = document.documentElement.clientHeight+'px';
-            } else if (window.innerWidth < tmpImg.width) {
-              imageDisplay.style.width = document.documentElement.clientWidth;+'px';
-            } else {
-              imageDisplay.style.paddingTop = parseInt((window.innerHeight - tmpImg.height) / 2)+'px';
-            }
-
-            imageDisplay.src             = img.src;
-            imageDisplay.alt             = img.alt;
-            imageDisplay.dataset.counter = img.dataset.counter;
-            
-            imageInfo.innerHTML          = '<h3>'+img.alt+'</h3>';
-            imageInfo.innerHTML         += img.src.split("/").pop();
-            imageInfo.innerHTML         += '<br />'+tmpImg.height+'&times;'+tmpImg.width+'px';
-                    
-            overlay.style.display        = "block";
-          });
+    for (index = 0; index < screenshotLink.length; ++index) {
+      screenshotLink[index].addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        var img = e.target;
+        if (e.target.tagName == 'A') {
+          img = e.target.children[0];
         }
         
-        imageDisplay.addEventListener('click', function(e) {
-          e.stopPropagation(); // !
-          
-          overlay.style.display = "none";
-          
-          img_counter = parseInt(e.target.dataset.counter) + 1;
-          try {
-            link = document.body.querySelector('img[data-counter="'+img_counter+'"]').parentNode;
-          } catch (e) {
-            try {
-              link = document.body.querySelector('img[data-counter="0"]').parentNode;
-            } catch (e) {
-              return false;
-            }
-          }
-          doClick(link);
-        });
+        // beautify
+        var tmpImg = new Image();
+        tmpImg.src = img.src;
+        imageDisplay.style.height     = 'auto';
+        imageDisplay.style.width     = 'auto';
+        if (window.innerHeight < tmpImg.height) {
+          imageDisplay.style.height = document.documentElement.clientHeight+'px';
+        } else if (window.innerWidth < tmpImg.width) {
+          imageDisplay.style.width = document.documentElement.clientWidth;+'px';
+        } else {
+          imageDisplay.style.paddingTop = parseInt((window.innerHeight - tmpImg.height) / 2)+'px';
+        }
 
-        overlay.addEventListener('click', function(e) {
-          overlay.style.display = "none";
-        })
+        imageDisplay.src             = img.src;
+        imageDisplay.alt             = img.alt;
+        imageDisplay.dataset.counter = img.dataset.counter;
         
-      function keyPressed(e) {
-        e = e || window.event;
-        var charCode = e.keyCode || e.which;
-        switch(charCode) {
-          case 27: // Esc
-            overlay.style.display = "none";
-            break;
-          case 34: // right-arrow, Page Down, keypad right, ...
-          case 39:
-          case 54:
-          case 102:
-            e.preventDefault();
-            doClick(imageDisplay);
-            break;
-          case 33: // left-arrow, Page Up, keypad right, ...
-          case 37:
-          case 52:
-          case 100:
-            e.preventDefault();
-            document.getElementById('imageDisplay').dataset.counter -= 2; // hacky
-            doClick(imageDisplay);
-            break;
-         }
-      };
-      document.body.addEventListener('keydown', keyPressed);
-      </script>
-  </body>
+        imageInfo.innerHTML          = '<h3>'+img.alt+'</h3>';
+        imageInfo.innerHTML         += img.src.split("/").pop();
+        imageInfo.innerHTML         += '<br />'+tmpImg.height+'&times;'+tmpImg.width+'px';
+                
+        overlay.style.display        = "block";
+      });
+    }
+    
+    imageDisplay.addEventListener('click', function(e) {
+      e.stopPropagation(); // !
+      
+      overlay.style.display = "none";
+      
+      img_counter = parseInt(e.target.dataset.counter) + 1;
+      try {
+        link = document.body.querySelector('img[data-counter="'+img_counter+'"]').parentNode;
+      } catch (e) {
+        try {
+          link = document.body.querySelector('img[data-counter="0"]').parentNode;
+        } catch (e) {
+          return false;
+        }
+      }
+      doClick(link);
+    });
+
+    overlay.addEventListener('click', function(e) {
+      overlay.style.display = "none";
+    })
+    
+  function keyPressed(e) {
+    e = e || window.event;
+    var charCode = e.keyCode || e.which;
+    switch(charCode) {
+      case 27: // Esc
+        overlay.style.display = "none";
+        break;
+      case 34: // right-arrow, Page Down, keypad right, ...
+      case 39:
+      case 54:
+      case 102:
+        e.preventDefault();
+        doClick(imageDisplay);
+        break;
+      case 33: // left-arrow, Page Up, keypad right, ...
+      case 37:
+      case 52:
+      case 100:
+        e.preventDefault();
+        document.getElementById('imageDisplay').dataset.counter -= 2; // hacky
+        doClick(imageDisplay);
+        break;
+     }
+  };
+  document.body.addEventListener('keydown', keyPressed);
+  </script>
+</body>
 </html>

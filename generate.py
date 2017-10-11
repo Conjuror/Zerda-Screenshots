@@ -2,8 +2,11 @@
 import os
 
 counter = 1
-colspan = 47
-with open("html_sample", "w") as r:
+
+with open("index.html", "w") as r:
+
+    with open("index_header.html") as header:
+        r.write(''.join(header.readlines()))
 
     # write table format EN head
     r.write("""
@@ -12,11 +15,11 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="{}">
+                <th>
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
-            <tr>""".format(colspan))
+            <tr>""")
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
             x = l[5:].split(". ")
@@ -47,11 +50,11 @@ with open("html_sample", "w") as r:
         <table>
         
             <tr>
-                <th colspan="{}">
+                <th>
                     <span class="deviceName">phoneScreenshots</span>
                 </th>
             </tr>
-        <tr>""".format(colspan))
+        <tr>""")
     counter = 1
     with open("images.list", "r") as f:
         for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
@@ -75,6 +78,9 @@ with open("html_sample", "w") as r:
     r.write("""
           </tr>
       </table>""")
+
+    with open("index_footer.html", "r") as footer:
+        r.write(''.join(footer.readlines()))
 
     print("COUNTER: {}".format(counter-1))
 
