@@ -1,6 +1,6 @@
 Build: 1456
 Per the UX spec (Home: v2.1, Menu: v2.1)
-Edited: 10/11 15:36
+Edited: 10/12 17:12
 ## Strings
 #### 0-1. Onboarding - first
 - [x] "Thanks for choosing Firefox Rocket"
@@ -66,7 +66,7 @@ Edited: 10/11 15:36
 - [x] "Tap %capture_icon% on the menu to capture an entire web page."
 #### 4-2. Home | Menu | My shots | Screenshot item | info
 - [x] "Info"
-- [x] "Time:"
+- [ ] "Date:"
 - [x] "Resolution:"
 - [x] "Size:"
 - [x] "Title:"
@@ -123,22 +123,22 @@ Edited: 10/11 15:36
 - [x] "SD card"
 - [x] "Internal storage"
 - [x] "CANCEL"
-#### _7-7. Home | Menu | Settings | Give feedback (P 1.5)_
-- [ ] _"Love Firefox Rocket?"_
-- [ ] _"Thank you for choosing our product. Your feedback is important to us."_
-- [ ] "_Yes, rate 5 star!"_
-- [ ] _"No, send feedback"_
+#### 7-7. Home | Menu | Settings | Give feedback (P 1.5)
+- [x] "Love Firefox Rocket?"
+- [x] "Thank you for choosing our product. Your feedback is important to us."
+- [x] "Yes, rate 5 star!"
+- [x] "No, send feedback"
 #### _7-8. Home | Menu | Settings | Give feedback | No, send feedback (P 1.5)_
 - [ ] _"Firefox Rocket"_
 - [ ] _"Help us improve the product by giving feedback"_
 - [ ] _"say something about performance, easy to use or anything"_
 - [ ] _"Submit"_
-#### _7-9. Home | Menu | Settings | Share with friends (P 1.5)_
-- [ ] _"Share Firefox Rocket with friends!"_
-- [ ] _"Fast and lightweight"_
-- [ ] _"Helps save data"_
-- [ ] _"Powerful screenshots"_
-- [ ] _"SHARE"_
+#### 7-9. Home | Menu | Settings | Share with friends (P 1.5)
+- [x] "Share Firefox Rocket with friends!"
+- [x] "- Fast and lightweight"
+- [x] "- Data saving"
+- [x] "- Powerful screenshots"
+- [x] "SHARE"
 #### 7-10. Home | Menu | Settings | About
 - [x] "Firefox Rocket is a fast and lightweight browser produced by Mozilla. Our mission is to foster a healthy, open internet."
 - [x] "Learn more"
