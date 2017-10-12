@@ -84,6 +84,7 @@
   function keyPressed(e) {
     e = e || window.event;
     var charCode = e.keyCode || e.which;
+    var length = parseInt(document.querySelectorAll('img[data-counter]').length/2)
     switch(charCode) {
       case 27: // Esc
         overlay.style.display = "none";
@@ -101,6 +102,16 @@
       case 100:
         e.preventDefault();
         document.getElementById('imageDisplay').dataset.counter -= 2; // hacky
+        doClick(imageDisplay);
+        break;
+      case 38: // up-arrow
+        e.preventDefault();
+        document.getElementById('imageDisplay').dataset.counter -= length + 1; // hacky
+        doClick(imageDisplay);
+        break;
+      case 40: // down-arrow
+        e.preventDefault();
+        document.getElementById('imageDisplay').dataset.counter = parseInt(document.getElementById('imageDisplay').dataset.counter) + length - 1; // hacky
         doClick(imageDisplay);
         break;
      }
