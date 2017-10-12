@@ -32,12 +32,12 @@ with open("index.html", "w") as r:
         <img class="screenshot"
              src="./en/{}.png"
            style="width: 100%;"
-             alt="en phoneScreenshots"
+             alt="en {}"
     data-counter="{}" />
     </a>
 </td>
 """
-            r.write(sample.format(x[0], x[0], counter))
+            r.write(sample.format(x[0], x[0], x[1], counter))
             counter += 1
 
     r.write("""
@@ -68,12 +68,12 @@ with open("index.html", "w") as r:
         <img class="screenshot"
              src="./id/{}.png"
            style="width: 100%;"
-             alt="id phoneScreenshots"
+             alt="id {}"
     data-counter="{}" />
     </a>
 </td>
 """
-            r.write(sample.format(x[0], x[0], counter))
+            r.write(sample.format(x[0], x[0], x[1], counter))
             counter += 1
 
     r.write("""
