@@ -9,76 +9,42 @@ with open("index.html", "w") as r:
     with open("index_header.html") as header:
         r.write(''.join(header.readlines()))
 
-    # write table format EN head
-    r.write("""
-<h1 class="language">en</h1>
-    <hr>
-        <table>
-        
-            <tr>
-                <th colspan="{}">
-                    <span class="deviceName">phoneScreenshots</span>
-                </th>
-            </tr>
-            <tr>""".format(maxcolspan))
-    with open("images.list", "r") as f:
-        for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
-            x = l[5:].split(". ")
-            if x[0].startswith("_"):
-                continue
-            sample = """
-<td>            
-    <a href="./en/{}.png" target="_blank" class="screenshotLink">
-        <img class="screenshot"
-             src="./en/{}.png"
-           style="width: 100%;"
-             alt="en {}"
-    data-counter="{}" />
-    </a>
-</td>
-"""
-            r.write(sample.format(x[0], x[0], x[1], counter))
-            counter += 1
+    language = ['en', 'id']
 
-    r.write("""
-
-            </tr>
-        
-        </table>
-    
-        <h1 class="language">id</h1>
+    for lang in language:
+        r.write("""
+    <h1 class="language">{}</h1>
         <hr>
-        <table>
-        
-            <tr>
-                <th colspan="{}">
-                    <span class="deviceName">phoneScreenshots</span>
-                </th>
-            </tr>
-        <tr>""".format(maxcolspan))
-    # counter = 1
-    with open("images.list", "r") as f:
-        for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
-            x = l[5:].split(". ")
-            if x[0].startswith("_"):
-                continue
-            sample = """
+            <table>
+            
+                <tr>
+                    <th colspan="{}">
+                        <span class="deviceName">phoneScreenshots</span>
+                    </th>
+                </tr>
+                <tr>""".format(lang, maxcolspan))
+        with open("images.list", "r") as f:
+            for l in [x.strip() for x in f.readlines() if x.startswith("####")]:
+                x = l[5:].split(". ")
+                if x[0].startswith("_"):
+                    continue
+                sample = """
 <td>            
-    <a href="./id/{}.png" target="_blank" class="screenshotLink">
+    <a href="./{}/{}.png" target="_blank" class="screenshotLink">
         <img class="screenshot"
-             src="./id/{}.png"
-           style="width: 100%;"
-             alt="id {}"
+            src="./{}/{}.png"
+        style="width: 100%;"
+            alt="{} {}"
     data-counter="{}" />
     </a>
 </td>
-"""
-            r.write(sample.format(x[0], x[0], x[1], counter))
-            counter += 1
+    """
+                r.write(sample.format(lang, x[0], lang, x[0], lang, x[1], counter))
+                counter += 1
 
-    r.write("""
-          </tr>
-      </table>""")
+        r.write("""
+    </tr>
+</table>""")
 
     with open("index_footer.html", "r") as footer:
         r.write(''.join(footer.readlines()))
