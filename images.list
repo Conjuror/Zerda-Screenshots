@@ -1,6 +1,6 @@
-Build: 1456
-Per the UX spec (Home: v2.1, Menu: v2.1)
-Edited: 10/17 14:45
+Build: 1541
+Per the UX spec (Home: v2.1, Menu: v2.3)
+Edited: 10/18 10:02
 ## Strings
 #### 0-1. Onboarding - first
 - [x] "Thanks for choosing Firefox Rocket"
@@ -31,7 +31,7 @@ Edited: 10/17 14:45
 - [x] "Block image"
 - [x] "Clear cache"
 - [x] "Settings"
-- [ ] "Exit"
+- [x] "Exit"
 #### 2-1. HOME | Menu | Downloads empty
 - [x] "No downloads"
 #### 2-2-1. Home | Menu | Downloads with items
@@ -127,8 +127,8 @@ Edited: 10/17 14:45
 #### 7-7. Home | Menu | Settings | Give feedback (P 1.5)
 - [x] "Love Firefox Rocket?"
 - [x] "Thank you for choosing our product. Your feedback is important to us."
-- [x] "Yes, rate 5 star!"
-- [x] "No, send feedback"
+- [x] "YES, RATE 5 STAR!"
+- [x] "NO, SEND FEEDBACK."
 #### 7-9-1. Home | Menu | Settings | Share with friends (P 1.5)
 - [x] "Share Firefox Rocket with friends!"
 - [x] "- Fast and lightweight"
@@ -136,8 +136,8 @@ Edited: 10/17 14:45
 - [x] "- Powerful screenshots"
 - [x] "SHARE"
 #### 7-9-2. Home | Menu | Settings | Share with friends | Share (P 1.5)
-- [ ] "Firefox Rocket"
-- [ ] "Hey, check out this fast and lightweight browser from Mozilla. Firefox Rocket https://mzl.la/2kScptw"
+- [x] "Firefox Rocket"
+- [x] "Hey, check out this fast and lightweight browser from Mozilla. Firefox Rocket https://mzl.la/2kScptw"
 #### 7-10. Home | Menu | Settings | About
 - [x] "Firefox Rocket is a fast and lightweight browser produced by Mozilla. Our mission is to foster a healthy, open internet."
 - [x] "Learn more"
@@ -156,10 +156,10 @@ Edited: 10/17 14:45
 - [x] "Screenshot saved" (snack bar - action: SHARE)
 #### 8-3. Home | Menu | Capture screenshot | Failed to capture
 - [x] "Failed to capture screenshot" (toast)
-#### _8-4. Home | System screenshot (P 1.5)_
-- [ ] _"Tap the %capture_icon% on the menu to capture the entire page."_
-- [ ] _"Use saved screenshots to go back to the page anytime."_
-- [ ] _"GOT IT!"_
+#### 8-4. Home | System screenshot (P 1.5)
+- [x] "Tap the screenshot button in the menu to capture the whole page."
+- [x] "Fast, easy and come back to the page at anytime!"
+- [x] "GOT IT!"
 #### 8-5. Home | Menu | Capture screenshot
 - [x] "Capturing screenshot of entire page..."
 #### 9-1. Home | Error page
