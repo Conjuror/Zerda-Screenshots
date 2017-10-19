@@ -1,6 +1,7 @@
-Build: 1541
+Build: 1551
 Per the UX spec (Home: v2.1, Menu: v2.3)
-Edited: 10/18 10:02
+Edited: 10/19 09:41
+[Screenshots](https://conjuror.github.io/Zerda-Screenshots/index.html)
 ## Strings
 #### 0-1. Onboarding - first
 - [x] "Thanks for choosing Firefox Rocket"
@@ -67,7 +68,7 @@ Edited: 10/18 10:02
 - [x] "Tap %capture_icon% on the menu to capture an entire web page."
 #### 4-2. Home | Menu | My shots | Screenshot item | info
 - [x] "Info"
-- [ ] "Date:"
+- [x] "Date:"
 - [x] "Resolution:"
 - [x] "Size:"
 - [x] "Title:"
@@ -98,8 +99,8 @@ Edited: 10/18 10:02
 - [x] "Send usage data"
 - [x] "Mozilla strives to collect only what we need to provide and improve Firefox Rocket for everyone."
 - [x] "Learn more"
-- [ ] _"Give feedback" (P 1.5)_
-- [ ] _"Share with friends" (P 1.5)_
+- [x] "Give feedback" (P 1.5)
+- [x] "Share with friends" (P 1.5)
 - [x] "About"
 #### 7-2. Home | Menu | Settings | Language
 - [x] "Language"
