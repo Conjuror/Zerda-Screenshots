@@ -1,6 +1,6 @@
-Build: 1551
+Build: 1563
 Per the UX spec (Home: v2.1, Menu: v2.3)
-Edited: 10/19 09:41
+Edited: 10/20 14:08
 [Screenshots](https://conjuror.github.io/Zerda-Screenshots/index.html)
 ## Strings
 #### 0-1. Onboarding - first
@@ -90,12 +90,14 @@ Edited: 10/19 09:41
 - [x] "Now showing images" (toast)
 #### 6-2. Home | Menu | Block image | -> off
 - [x] "Now blocking images" (toast)
-#### 7-1. Home | Menu | Settings
+#### 7-1-1. Home | Menu | Settings
 - [x] "Language"
 - [x] "Default search engine"
 - [x] "Clear browsing data"
 - [x] "Save downloads to"
+- [x] "Turbo mode"
 - [x] "Make default browser"
+#### 7-1-2. Home | Menu | Settings
 - [x] "Send usage data"
 - [x] "Mozilla strives to collect only what we need to provide and improve Firefox Rocket for everyone."
 - [x] "Learn more"
